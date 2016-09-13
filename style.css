@@ -1,3 +1,24 @@
+/*Supergiant Games 
+*GPL, Christian Ashley 2016
+*/
+
+/*General Styles*/
+body {
+	font-family: Helvetia, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+	background-color: #F0F;
+	background-image: url('pics/background.jpg');
+	background-size: 0 100%;
+	background-repeat: no-repeat;
+}
+
 h1 {
 	color: red;
+}
+
+.static {
+	position: absolute;
 }
