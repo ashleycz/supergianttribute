@@ -16,43 +16,59 @@ html{
 }
 
 body{
-	
-}
-
-header {
-	height: 37px;
-	background-color: #ff0;
-	text-align: left;
+	background-image: url("pics/background.jpg");
+	height: 100%;
 }
 
 .page-content {
 	width: 80%;
-	height: 100%;
+	height: calc(1080px+ 560px); /*1080px - 500px*/
 	margin: 0 auto;
+}
+
+.page-content-background {
+	position: absolute;
+	width: 80%;
+	height: 100%; /*1080px - 500px*/
+	left: 10%;
+	background-image: url('pics/gradient.png');
+	background-size: auto 100%;
+	background-repeat: repeat-x;
+	z-index: -1000;
+}
+
+header {
+	height: 37px;
+	/*background-color: #ff0;*/
+	text-align: left;
 }
 
 .side-nav {
 	width: 250px;
 	height: 100%;
-	background-color: #f00;
+	/*background-color: #f00;*/
 }
 
 .logo {
 	width: 100%;
-	height: 250px;
-	background-color: #f0f;
+	height: 150px;
+	/*background-color: #f0f;*/
+	background-image: url('pics/logo.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
 }
 
 .overview {
-	margin: 15px;
+	margin: 6px;
 	background-color: #0f0;
 	text-align: center;
 }
 
 .overview > p {
 	text-align: left;
-	padding-left: 2px;
-	padding-right: 2px;
+	padding-top: 6px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 footer {
@@ -69,13 +85,33 @@ footer {
 	top: 37px;
 	left: calc(10% + 250px);
 	height:calc(100% - 37px); /*100% - header.height*/
-	background-color: #0ff;
+	/*background-color: #0ff;*/
 	overflow-y: scroll;
 	padding: 0px;
 }
 
 .inner-content-block {
-	height: 2000px;
+	/*height: 2000px;*/
 	margin: 3px;
-	background-color: #f00;
+	/*background-color: #f00;*/
+}
+
+.game {
+	margin-bottom: 120px;
+}
+
+.game > img {
+	display: block;
+	width: 100%;
+	height: auto;
+	/*background-color: #00f;*/
+}
+
+.game > section{
+	background-color: #0f0;
+	padding: 6px 3px;
+}
+
+.game > section > p {
+	margin-top: 6px;
 }
