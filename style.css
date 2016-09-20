@@ -4,7 +4,7 @@
 
 /*General Styles*/
 * {
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Pavanam', sans-serif;
 	font-weight: 400;
 	margin: 0;
 	padding: 0;
@@ -28,13 +28,14 @@ body{
 
 .page-content-background {
 	position: absolute;
+	min-width: 1030px;
 	width: 80%;
 	height: 100%; /*1080px - 500px*/
 	left: 10%;
 	background-image: url('pics/gradient.png');
 	background-size: auto 100%;
 	background-repeat: repeat-x;
-	z-index: -1000;
+	z-index: -1;
 }
 
 header {
@@ -78,8 +79,9 @@ header {
 }
 
 .game-logos img{
-	width: 100%;
+	width: 80%;
 	height: auto;
+	padding:0 auto;
 }
 
 .game-logos  a:link {
@@ -108,6 +110,7 @@ footer {
 
 .content-block {
 	position: absolute;
+	min-width: 780px;
 	width: calc(80% - 250px);
 	top: 37px;
 	left: calc(10% + 250px);
@@ -131,12 +134,22 @@ footer {
 	display: block;
 	width: 100%;
 	height: auto;
+	z-index: 1;
 	/*background-color: #00f;*/
 }
 
 .game > section{
-	background-color: #0f0;
+	background-color: #fff9f2;
 	padding: 6px 3px;
+	z-index: 100;
+}
+
+.game > section img {
+	width: auto;
+	height: 100px;
+	margin-top: -40px;
+	position: relative;
+	z-index: 1;
 }
 
 .game > section > p {
